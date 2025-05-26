@@ -1,0 +1,134 @@
+html, 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Didot', serif;
+    font-size: 0.75em;
+    overflow-x: hidden;
+}
+  
+  /* Logo in top-left */
+  .logo-top-left {
+    position: fixed;
+    left: 6em;
+    width: 6em;
+    height: auto;
+    cursor: pointer;
+    z-index: 1000;
+    padding-top: 2em;
+}
+  
+  /* Navigation Bar */
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: white;
+    z-index: 999;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Didot', serif;
+    font-size: 2em;
+    padding: 1em 2em;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+  
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+  
+  /* About Layout */
+.about-layout {
+    display: flex;
+    margin-top: 13em;
+    padding-bottom: 3em;
+}
+  
+.left-column,
+.right-column {
+    flex: 1;
+}
+  
+.left-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+  /* Right Column Content */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em;
+    box-sizing: border-box;
+    margin-right: 2em;
+    margin-left: 5em;
+}
+  
+.social-and-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.social-icons {
+    display: flex;
+    gap: 3em;
+    margin-left: 2em;
+}
+  
+.social-icon {
+    width: 7em;
+    height: auto;
+    cursor: pointer;
+}
+  
+.about-title {
+    font-size: 10em;
+    font-family: 'Didot', serif;
+    margin: 0;
+    text-align: right;
+}
+  
+.about-description {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: right;
+    width: 85%;
+    margin-left: auto;
+    margin-right: 0;
+}
+  
+.bottom-link {
+    margin-top: 2em;
+    text-align: right;
+}
+  
+.bottom-link a {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+  
+.bottom-link a:hover {
+    color: darkblue;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/pagestyle.css">
+
+  <title>Magical Particles</title>
+
+</head>
+
+<body>
+
+    <a href="../main.html">
+        <img src="../assets/logo.png" alt="logo" class="logo-top-left" />
+    </a>
+
+    <nav class="navbar">
+        <a href="../photography/photography.html">Photography</a>
+        <a href="../videos/videos.html">Videos</a>
+        <a href="../coding/coding.html">Coding</a>
+        <a href="../classes/classes.html">Classes</a>
+        <a href="../extracurriculars/extracurriculars.html">Extracurriculars</a>
+    </nav>
+
+    <div class="page-header">
+        <h1 class="title">Magical Particles</h1>
+    </div>
+
+    <p class="date">April 4, 2024</p>
+
+    <div class="blog-text">
+
+        <a href="https://al7664.github.io/Creative-Coding/Particle/" target="_blank" class="blog-link">
+            Github Link →
+        </a>
+        <p>
+            Inspired by Fairy Godmother's magical wand, the user can press on the screen to release magical sparks. 
+            Small particles will form around the wand and slowly spread out, eventually disappearing. 
+            I initially drew inspiration from the fire sparks from Howl's Moving Castle, however, as I added the mouse interaction and the colors, I decided to change the overall theme into a magical wand to create a more reasonable background.
+        </p>
+        <p>
+            Boolean wand: “if (mouseIsPressed && particles.length is less than blank) addNewParticle()”
+            This allowed me to maintain the amount of particles on the canvas. 
+            In this, I can check if the mouse is pressed and if there are less than 100 particles to let me create new particle magical smarks.   
+        </p>
+        <img src="../assets/mini6.png" alt="rhythmNfeels thumbnail" class="blog-image" />
+        <a href="https://editor.p5js.org/al7664/full/V93H32BdL" target="_blank" class="blog-link">
+            P5 Sketch →
+        </a>
+        <p>
+            Arrays: In this project, I used a particle array to manage multiple instances of the particle class, which allows me to efficiently manage and manipulate the particles in my sketch.
+            Removing particles:  Initially, the particles were bouncing and all stayed on the canvas, however, to match the magical disappearance, I utilized the splice function to remove the particles that went outside of the canvas.
+            Random: I utilized random in the shape, varying from (1, 15) and velocity of my particles in my canvas to make the particles disperse in different directions.  I also utilized random in a specific set of color of oranges in order to add variation in the shade of orange sparks. 
+        </p>
+        <p>
+           Refelection
+           What is Object-Oriented Programming (OOP), a Class and an Instance of the Class? OOP is a programming model that revolves around the concept of objects. 
+           A class is a template for creating objects and defines the display and update of the objects we use. 
+           An instance is a specific part of a class that can carry its values. 
+           There can be multiple instances in a class. 
+        </p>
+        <p>
+            Discuss the effectiveness of OOP. When is OOP useful? 
+            In what way can it be utilized? 
+            OOP allows my code to be more organized as it utilizes classes that can be reused in other projects. 
+            OOP also helps organize my code as it separates code into smaller functionality groups. 
+            As a result, OOP can be useful when creating large complex projects, and it can be utilized in a variety of things such as building reusable libraries that can be used for multiple projects or games that utilize a variety of interactions and functions. 
+        </p>
+        <p>
+            Describe the objects you have created. 
+            What properties and methods were implemented? What kind of behaviors did you create by manipulating them? 
+            The main objects I created were the particle sparks from my wand. 
+            Rather than moving them up and down continuously without user interaction, I wanted the user to be able to control the project more. 
+            As a result, I utilized mouse interaction to let the user create the magical spark particles. 
+            I created a random dispersing behavior by utilizing a random variable in velocity and other attributes of my particle. 
+        </p>
+        <a href="https://drive.google.com/file/d/1yWXTG2pB7SO0FdCyfZ2sln_WKPMoAOdf/view?usp=sharing" target="_blank" class="blog-link">
+            Demo Video →
+        </a>
+
+    </div>
+
+    <div class="bottom-space"></div>
+
+</body>
+</html>

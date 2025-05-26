@@ -1,0 +1,173 @@
+html, 
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  font-family: 'Didot', serif;
+  font-size: 0.75em;
+  /* cursor: url('../assets/pencil.png') 0 32, auto; */
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background-color: white;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Didot', serif;
+  font-size: 2em;
+  padding: 1em 2em;
+  border: 0.0625em solid black; /* 1px border */
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Layout Containers */
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 5em;
+  box-sizing: border-box;
+  gap: 2em;
+}
+
+.row-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Name and Logo Styles */
+.name-stack {
+  display: flex;
+  margin-left: 4em;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25em;
+}
+
+.name-part {
+  font-size: 10em;
+  font-family: 'Didot', serif;
+  opacity: 0;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.delay {
+  animation-delay: 0.2s;
+}
+
+.logo {
+  width: 30em;
+  margin-top: -5em;
+  height: auto;
+  opacity: 0;
+  animation: slideInFromRight 1.5s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.scroll-indicator {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Didot', serif;
+  animation: bounce 2s infinite;
+  cursor: default;
+  margin-top: 10em;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5em);
+  }
+}
+
+.scroll-space {
+  height: 12.5em; /* 200px */
+}
+
+/* Stars and Peek Elements */
+.side-star {
+  position: fixed;
+  width: 12.5em; /* 200px */
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.left-star {
+  top: 10em;
+  left: 10em;
+  width: 30em;
+}
+
+.right-star {
+  bottom: -30em;  /* -200px */
+  right: -7em;   /* -100px */
+  width: 70em;   /* 500px */
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.main-pic {
+  position: fixed;
+  bottom: -8em;   /* -60px */
+  left: 23em;     /* 180px */
+  width: 45em;   /* 390px */
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}

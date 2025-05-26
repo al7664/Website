@@ -1,0 +1,154 @@
+html, 
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    font-family: 'Didot', serif;
+    font-size: 0.75em;
+}
+  
+  /* Logo in top-left */
+.logo-top-left {
+    position: fixed;
+    left: 6em;
+    width: 6em;
+    height: auto;
+    cursor: pointer;
+    z-index: 1000;
+    padding-top: 2em;
+}
+  
+  /* Navigation Bar */
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: white;
+    z-index: 999;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Didot', serif;
+    font-size: 2em;
+    padding: 1em 2em;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+  
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+  
+  /* Page Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 14em 5em 5em 5em; /* Top, Right, Bottom, left */
+    gap: 2em;
+    position: relative;
+    z-index: 1;
+}
+  
+.title {
+    font-size: 10em;
+    font-family: 'Didot', serif;
+    margin: 0;
+    text-align: left;
+    line-height: 1.1;
+}
+  
+.description {
+    max-width: 25em;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 1.4;
+    text-align: right;
+    
+}
+
+.class-content {
+    width: 100%;
+    padding-left: 0em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+  }  
+
+.class-sections {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .class-block {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Didot', serif;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .class-block h2 {
+    font-size: 1em;           /* adjust as needed */
+    font-family: 'Didot', serif;
+    text-align: left;
+    width: 100%;
+    padding-left: 2em;        /* optional: adds spacing from the left edge */
+    margin: 0;
+  }
+  
+  .first-block {
+    background-color: #FBCEB1; /* optional background */
+  }
+  
+  .second-block {
+    background-color: #F5F5DC; /* optional background */
+  }
+
+  .third-block {
+    background-color: #F8DE7E; /* optional background */
+  }
+
+  .fourth-block {
+    background-color: #B6D0E2; /* optional background */
+  }
+
+  .class-image-row {
+    display: flex;
+    justify-content: left;         /* aligns to the left under the title */
+    gap: 2em;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    flex-wrap: wrap;               /* allows wrapping on smaller screens */
+  }
+  
+  .class-image-row a img {
+    width: 250px;                  /* fixed consistent width */
+    height: 250px;                 /* fixed consistent height */
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .class-image-row a:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
