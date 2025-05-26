@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <title>Main</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="photography/photography.html">Photography</a>
+        <a href="videos/videos.html">Videos</a>
+        <a href="coding/coding.html">Coding</a>
+        <a href="classes/classes.html">Classes</a>
+        <a href="extracurriculars/extracurriculars.html">Extracurriculars</a>
+    </nav>
+    
+      
+    <div class="main-content column-layout">
+        <div class="row-layout">
+            <div class="name-stack">
+              <div class="name-part slide-left">Ada Lian</div>
+              <div class="name-part slide-left delay">连可欣</div>
+            </div>
+            
+            <img src="assets/logo.png" alt="logo" class="logo slide-right" />
+        </div>
+    
+        <div class="scroll-indicator">
+            ↓ Learn About Me
+        </div>
+    </div>  
+    
+    <div class="scroll-space"></div>
+
+    <img src="assets/yellowstar.png" alt="yellow star" class="side-star left-star" />
+    <img src="assets/bluestar.png" alt="blue star" class="side-star right-star" />
+    <img src="assets/mainpic.png" alt="main image" class="side-star main-pic" />
+
+    <script>
+      let triggered = false;
+      let lastScrollY = window.scrollY;
+    
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+    
+        // Check if user is scrolling down and passes threshold
+        if (!triggered && currentScrollY > lastScrollY && currentScrollY > 100) {
+          triggered = true;
+          window.location.href = 'aboutme.html';
+        }
+    
+        lastScrollY = currentScrollY;
+      });
+    </script>
+
+</body>
+</html>
